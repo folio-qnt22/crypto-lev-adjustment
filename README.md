@@ -7,7 +7,14 @@ To change the parameter, go to the function *lev_adjustment*
     BTC_volatility = 0.12 # value of (H-L)/O at the period where you perform the best 
     SL_best = 0.7  # value of the SL at the period where you perform the best 
    
+To change the leverage you're using,
 
+    max_lev    = 15
+    normal_lev = 10
+    safe_lev   = 7
+
+
+Enjoy!
 
 
 Donation
