@@ -43,7 +43,7 @@ Max_lev    = []
 Normal_lev = []
 Safe_lev   = []
 SL_        = []
-
+print('Processing...')
 for Ticker in get_top20tickers():
     #Ticker = 'BTCUSDT'
     leverage = lev_adjustment(get_volatility(500,Ticker,'5m'))
@@ -53,13 +53,12 @@ for Ticker in get_top20tickers():
     Safe_lev  .append(leverage[2])
     SL_       .append(leverage[3])
     
-    
 df = pd.DataFrame(Ticker_,columns=['Ticker'])
 df['max']    = Max_lev   
 df['normal'] = Normal_lev 
 df['safe']   = Safe_lev  
 df['SL%']         = SL_       
-
+print('------------------------------------')
 print('Pika Risk Management Estimation Tool')
 print('------------------------------------')
 table = df.to_string( index = False, header = True, line_width = 70, justify = 'left')
