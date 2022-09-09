@@ -12,6 +12,12 @@ To change the leverage you're using,
     max_lev    = 15
     normal_lev = 10
     safe_lev   = 7
+    
+    
+    
+You can also simply read the Volatility value from the plot below!
+![V](https://user-images.githubusercontent.com/103450613/189390613-521eaad5-9172-4992-b838-fb7d9707e49e.png)
+
 
 
 Enjoy!
